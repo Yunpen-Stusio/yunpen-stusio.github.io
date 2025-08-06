@@ -52,7 +52,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            background: #A9A9A9;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -170,7 +170,7 @@
             width: 60px;
             height: 60px;
             border-radius: 12px;
-            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+            background: background: linear-gradient(#1E90FF, #191970);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -200,11 +200,13 @@
             gap: 15px;
         }
 
-        .store-link {
-            display: inline-flex;
+        .social-link {
+            display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 10px 15px;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            padding: 0;
             background: #f8f9fa;
             border-radius: 8px;
             text-decoration: none;
@@ -217,72 +219,8 @@
             background: #e9ecef;
             transform: scale(1.05);
         }
-
-        .store-link.ios {
-            background: linear-gradient(135deg, #007aff, #0051d5);
-            color: white;
-        }
-
-        .store-link.android {
-            background: linear-gradient(135deg, #34a853, #137333);
-            color: white;
-        }
-
-        .store-link.web {
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
-            color: white;
-        }
-
-        /* Apple App Store公式ボタンスタイル */
-        .app-store-badge {
-            display: inline-block;
-            transition: all 0.3s ease;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .app-store-badge:hover {
-            transform: scale(1.05);
-        }
-
-        .app-store-badge img {
-            display: block;
-            max-width: 200px;
-            height: auto;
-        }
-
-        /* Google Play公式ボタン用のスタイル */
-        .google-play-badge {
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
-
-        .google-play-badge:hover {
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px 20px;
-            }
-            
-            .name {
-                font-size: 2em;
-            }
-            
-            .social-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .apps-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .store-links {
-                flex-wrap: wrap;
-            }
-        }
+     
+       
     </style>
 </head>
 <body>
@@ -293,14 +231,16 @@
 </div>
             <p class="title">ゆんぺん</p>
         </div>
-        <a href="https://twitter.com/peneon_pc" class="social-link twitter" target="_blank">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="Twitter" style="width: 20px; height: 20px; filter: brightness(0) invert(1);">
-    <span>@peneon_pc</span>
-</a>
-<a href="https://note.com/your_username" class="social-link note" target="_blank">
-    <img src="images/note_icon.svg" alt="note" style="width: 20px; height: 20px;">
-    <span>note</span>
-</a>
+     
+        <div class="social-links">
+    <a href="https://x.com/penpen_pc" class="social-link x" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" alt="X" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://note.com/your_username" class="social-link note" target="_blank">
+        <img src="images/note_icon.svg" alt="note" alt="note" style="width: 24px; height: 24px;">
+    </a>
+</div>
+        
         <div class="apps-section">
             <h2 class="section-title">作成したアプリ</h2>
             <div class="apps-grid">
